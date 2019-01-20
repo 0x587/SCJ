@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block language %}en{% endblock %}
+{% block title %}Home_en{% endblock %}
+{% block  body %}
+<div class="container">
+    <div class="container" align="right" style="padding-right: 40px;">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="btn-group" style="padding-left: 75px;">
+                        <button class="btn btn-default">语言</button> <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="right: 0px;border-right-width: 0px;width: 101px;padding-left: 0px;border-left-width: 0px;left: auto;">
+                        <li>
+                            <a href="/home_zh">中文</a>
+                        </li>
+                        <li>
+                            <a href="/home_en">English</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1>
+					欢迎来到SCJ！
+				</h1>
+				<p>
+                    这是一个数据可视化网站。
+                    在这里你可以看到学生成绩的可视化展示。
+				</p>
+				<p>
+					 <a class="btn btn-primary btn-large" href="#">开始吧</a>
+				</p>
+			</div>
+		</div>
+    </div>
+	
+
+	<!-- <div class="row clearfix">
+		<div class="col-md-2 column">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">
+						Panel title
+					</h3>
+				</div>
+				<div class="panel-body">
+					Panel content
+				</div>
+				<div class="panel-footer">
+					Panel footer
+				</div>
+			</div>
+		</div>
+		<div class="col-md-10 column">
+			<div class="panel-group" id="panel-270945">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title" data-toggle="collapse" data-parent="#panel-270945" href="#panel-element-459530">Collapsible Group Item #1</a>
+					</div>
+					<div id="panel-element-459530" class="panel-collapse in">
+						<div class="panel-body">
+							Anim pariatur cliche...
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-270945" href="#panel-element-559513">Collapsible Group Item #2</a>
+					</div>
+					<div id="panel-element-559513" class="panel-collapse collapse">
+						<div class="panel-body">
+							Anim pariatur cliche...
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+</div>
+{% endblock %}

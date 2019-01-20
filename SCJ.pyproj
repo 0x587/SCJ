@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d6ff3c79-4d12-416f-b72b-66bd58ae9908</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>SCJ</Name>
+    <RootNamespace>SCJ</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="runserver.py" />
+    <Compile Include="SCJ\data_load.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SCJ\Menmbers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SCJ\__init__.py" />
+    <Compile Include="SCJ\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SCJ\" />
+    <Folder Include="SCJ\static\" />
+    <Folder Include="SCJ\static\content\" />
+    <Folder Include="SCJ\static\fonts\" />
+    <Folder Include="SCJ\static\lib\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\accent-neutralise\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\angular\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\cookie\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\copy-rows\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\editable\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\export\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\filter-control\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\filter\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\flat-json\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\group-by-v2\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\group-by\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\i18n-enhance\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\key-events\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\mobile\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\multi-column-toggle\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\multiple-search\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\multiple-sort\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\natural-sorting\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\reorder-columns\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\reorder-rows\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\resizable\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\select2-filter\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\sticky-header\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\extensions\toolbar\" />
+    <Folder Include="SCJ\static\lib\bootstrap-table\locale\" />
+    <Folder Include="SCJ\static\lib\bootstrapValidator\" />
+    <Folder Include="SCJ\static\lib\bootstrapValidator\css\" />
+    <Folder Include="SCJ\static\lib\bootstrapValidator\js\" />
+    <Folder Include="SCJ\static\lib\bootstrapValidator\js\language\" />
+    <Folder Include="SCJ\static\lib\bootstrap\" />
+    <Folder Include="SCJ\static\lib\bootstrap\css\" />
+    <Folder Include="SCJ\static\lib\bootstrap\fonts\" />
+    <Folder Include="SCJ\static\lib\bootstrap\js\" />
+    <Folder Include="SCJ\static\lib\font-awesome\" />
+    <Folder Include="SCJ\static\lib\font-awesome\css\" />
+    <Folder Include="SCJ\static\lib\font-awesome\fonts\" />
+    <Folder Include="SCJ\static\lib\jquery-confirm\" />
+    <Folder Include="SCJ\static\lib\jquery-confirm\css\" />
+    <Folder Include="SCJ\static\lib\jquery-confirm\js\" />
+    <Folder Include="SCJ\static\lib\ueditor\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\anchor\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\attachment\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\attachment\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\background\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\background\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\charts\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\charts\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\emotion\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\emotion\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\gmap\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\help\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\image\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\image\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\insertframe\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\link\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\map\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\music\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\preview\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\scrawl\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\searchreplace\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\snapscreen\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\spechars\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\table\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\template\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\template\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\video\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\video\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\webapp\" />
+    <Folder Include="SCJ\static\lib\ueditor\dialogs\wordimage\" />
+    <Folder Include="SCJ\static\lib\ueditor\jsp\" />
+    <Folder Include="SCJ\static\lib\ueditor\jsp\lib\" />
+    <Folder Include="SCJ\static\lib\ueditor\lang\" />
+    <Folder Include="SCJ\static\lib\ueditor\lang\en\" />
+    <Folder Include="SCJ\static\lib\ueditor\lang\en\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\lang\zh-cn\" />
+    <Folder Include="SCJ\static\lib\ueditor\lang\zh-cn\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\themes\" />
+    <Folder Include="SCJ\static\lib\ueditor\themes\default\" />
+    <Folder Include="SCJ\static\lib\ueditor\themes\default\css\" />
+    <Folder Include="SCJ\static\lib\ueditor\themes\default\images\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\codemirror\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\highcharts\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\highcharts\themes\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\snapscreen\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\SyntaxHighlighter\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\video-js\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\video-js\font\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\webuploader\" />
+    <Folder Include="SCJ\static\lib\ueditor\third-party\zeroclipboard\" />
+    <Folder Include="SCJ\static\scripts\" />
+    <Folder Include="SCJ\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="SCJ\static\content\bootstrap.css" />
+    <Content Include="SCJ\static\content\bootstrap.min.css" />
+    <Content Include="SCJ\static\content\site.css" />
+    <Content Include="SCJ\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="SCJ\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="SCJ\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="SCJ\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="SCJ\static\lib\bootstrap-table\bootstrap-table-locale-all.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\bootstrap-table-locale-all.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\bootstrap-table.css" />
+    <Content Include="SCJ\static\lib\bootstrap-table\bootstrap-table.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\bootstrap-table.min.css" />
+    <Content Include="SCJ\static\lib\bootstrap-table\bootstrap-table.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\angular\bootstrap-table-angular.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\angular\bootstrap-table-angular.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\cookie\bootstrap-table-cookie.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\cookie\bootstrap-table-cookie.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\copy-rows\bootstrap-table-copy-rows.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\copy-rows\bootstrap-table-copy-rows.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\editable\bootstrap-table-editable.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\editable\bootstrap-table-editable.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\export\bootstrap-table-export.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\export\bootstrap-table-export.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\filter\bootstrap-table-filter.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\filter\bootstrap-table-filter.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.css" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\group-by\bootstrap-table-group-by.css" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\group-by\bootstrap-table-group-by.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\group-by\bootstrap-table-group-by.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\i18n-enhance\bootstrap-table-i18n-enhance.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\i18n-enhance\bootstrap-table-i18n-enhance.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\key-events\bootstrap-table-key-events.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\key-events\bootstrap-table-key-events.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\mobile\bootstrap-table-mobile.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\mobile\bootstrap-table-mobile.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\multi-column-toggle\bootstrap-table-multi-toggle.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\multi-column-toggle\bootstrap-table-multi-toggle.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.css" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\resizable\bootstrap-table-resizable.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\resizable\bootstrap-table-resizable.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\select2-filter\bootstrap-table-select2-filter.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\select2-filter\bootstrap-table-select2-filter.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.css" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-af-ZA.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-af-ZA.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ar-SA.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ar-SA.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ca-ES.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ca-ES.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-cs-CZ.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-cs-CZ.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-da-DK.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-da-DK.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-de-DE.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-de-DE.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-el-GR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-el-GR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-en-US.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-en-US.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-AR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-AR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-CR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-CR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-ES.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-ES.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-MX.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-MX.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-NI.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-NI.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-SP.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-es-SP.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-et-EE.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-et-EE.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-fa-IR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-fa-IR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-fr-BE.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-fr-BE.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-fr-FR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-fr-FR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-he-IL.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-he-IL.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-hr-HR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-hr-HR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-hu-HU.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-hu-HU.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-it-IT.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-it-IT.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ja-JP.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ja-JP.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ka-GE.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ka-GE.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ko-KR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ko-KR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ms-MY.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ms-MY.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-nb-NO.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-nb-NO.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-nl-NL.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-nl-NL.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-pl-PL.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-pl-PL.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-pt-BR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-pt-BR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-pt-PT.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-pt-PT.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ro-RO.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ro-RO.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ru-RU.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ru-RU.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-sk-SK.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-sk-SK.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-sv-SE.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-sv-SE.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-th-TH.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-th-TH.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-tr-TR.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-tr-TR.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-uk-UA.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-uk-UA.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ur-PK.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-ur-PK.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-vi-VN.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-vi-VN.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-zh-CN.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-zh-CN.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-zh-TW.js" />
+    <Content Include="SCJ\static\lib\bootstrap-table\locale\bootstrap-table-zh-TW.min.js" />
+    <Content Include="SCJ\static\lib\bootstrapValidator\css\bootstrapValidator.css" />
+    <Content Include="SCJ\static\lib\bootstrapValidator\css\bootstrapValidator.min.css" />
+    <Content Include="SCJ\static\lib\bootstrapValidator\js\bootstrapValidator.js" />
+    <Content Include="SCJ\static\lib\bootstrapValidator\js\language\zh_CN.js" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap-extend.css" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap.css" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap.css.map" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap.min.css" />
+    <Content Include="SCJ\static\lib\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="SCJ\static\lib\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="SCJ\static\lib\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="SCJ\static\lib\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="SCJ\static\lib\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="SCJ\static\lib\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="SCJ\static\lib\bootstrap\js\bootstrap-extend.js" />
+    <Content Include="SCJ\static\lib\bootstrap\js\bootstrap.js" />
+    <Content Include="SCJ\static\lib\bootstrap\js\bootstrap.min.js" />
+    <Content Include="SCJ\static\lib\bootstrap\js\npm.js" />
+    <Content Include="SCJ\static\lib\font-awesome\css\font-awesome.css" />
+    <Content Include="SCJ\static\lib\font-awesome\css\font-awesome.css.map" />
+    <Content Include="SCJ\static\lib\font-awesome\css\font-awesome.min.css" />
+    <Content Include="SCJ\static\lib\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="SCJ\static\lib\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="SCJ\static\lib\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="SCJ\static\lib\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="SCJ\static\lib\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="SCJ\static\lib\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="SCJ\static\lib\jquery-confirm\css\jquery-confirm.css" />
+    <Content Include="SCJ\static\lib\jquery-confirm\js\jquery-confirm.js" />
+    <Content Include="SCJ\static\lib\jquery.form.js" />
+    <Content Include="SCJ\static\lib\jquery.js" />
+    <Content Include="SCJ\static\lib\jqueryui.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\attachment.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\icons.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\image.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\progress.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\success.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\attachment\images\success.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\background\background.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\background\background.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\background\background.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\background\images\bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\background\images\success.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\chart.config.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\charts.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\charts.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\charts.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\images\charts0.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\images\charts1.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\images\charts2.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\images\charts3.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\images\charts4.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\charts\images\charts5.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\help\help.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\help\help.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\help\help.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\image.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\image.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\image.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\icons.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\icons.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\image.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\progress.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\success.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\image\images\success.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\internal.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\link\link.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\map\map.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\map\show.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\music\music.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\music\music.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\music\music.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\preview\preview.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\table\dragicon.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\table\edittable.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\table\edittable.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\table\edittable.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\table\edittd.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\table\edittip.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\config.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\template.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\template.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\template\template.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\file-icons.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\icons.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\icons.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\image.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\progress.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\success.gif" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\images\success.png" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\video.css" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\video.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\video\video.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\wordimage\tangram.js" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="SCJ\static\lib\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="SCJ\static\lib\ueditor\index.html" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\config.json" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\controller.jsp" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\lib\commons-codec-1.9.jar" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\lib\commons-fileupload-1.3.1.jar" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\lib\commons-io-2.4.jar" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\lib\json.jar" />
+    <Content Include="SCJ\static\lib\ueditor\jsp\lib\ueditor-1.1.2.jar" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\en.js" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\addimage.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\background.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\button.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\copy.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\listbackground.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\localimage.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\music.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\en\images\upload.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="SCJ\static\lib\ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\css\ueditor.css" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\css\ueditor.min.css" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\dialogbase.css" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\arrow.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\charts.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\filescan.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\icons.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\icons.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\loaderror.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\loading.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\lock.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\scale.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\sortable.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\upload.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\word.gif" />
+    <Content Include="SCJ\static\lib\ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="SCJ\static\lib\ueditor\themes\iframe.css" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\highcharts.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\data.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\map.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\jquery-1.10.2.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\jquery-1.10.2.min.map" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\font\vjs.eot" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\font\vjs.svg" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\font\vjs.ttf" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\video-js.css" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\video-js.min.css" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\video-js.swf" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\video.dev.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\video-js\video.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.css" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\xss.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="SCJ\static\lib\ueditor\ueditor.all.js" />
+    <Content Include="SCJ\static\lib\ueditor\ueditor.all.min.js" />
+    <Content Include="SCJ\static\lib\ueditor\ueditor.config.js" />
+    <Content Include="SCJ\static\lib\ueditor\ueditor.parse.js" />
+    <Content Include="SCJ\static\lib\ueditor\ueditor.parse.min.js" />
+    <Content Include="SCJ\static\lib\underscore.js" />
+    <Content Include="SCJ\static\scripts\bootstrap.js" />
+    <Content Include="SCJ\static\scripts\bootstrap.min.js" />
+    <Content Include="SCJ\static\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="SCJ\static\scripts\jquery-1.10.2.js" />
+    <Content Include="SCJ\static\scripts\jquery-1.10.2.min.js" />
+    <Content Include="SCJ\static\scripts\jquery-1.10.2.min.map" />
+    <Content Include="SCJ\static\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="SCJ\static\scripts\jquery.validate.js" />
+    <Content Include="SCJ\static\scripts\jquery.validate.min.js" />
+    <Content Include="SCJ\static\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="SCJ\static\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="SCJ\static\scripts\modernizr-2.6.2.js" />
+    <Content Include="SCJ\static\scripts\respond.js" />
+    <Content Include="SCJ\static\scripts\respond.min.js" />
+    <Content Include="SCJ\static\scripts\_references.js" />
+    <Content Include="SCJ\templates\Class.html" />
+    <Content Include="SCJ\templates\Hello.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
